@@ -1,0 +1,123 @@
+.pricelist {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.pricelist_title {
+  font-size: 3.8rem;
+}
+
+.pricelist_desciption {
+  font-size: 2.4rem;
+}
+
+.price_table_list {
+  margin-top: 20px;
+}
+
+.price_table_wrap {
+  box-shadow: 0 1px 1px #ccc;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s,
+    opacity 0.3s;
+  &:hover {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s,
+      color 0.3s, opacity 0.3s;
+    transform: translateY(-6px);
+  }
+}
+
+.table_head {
+  margin-top: 60px;
+  background-color: #03b7a6;
+  padding-top: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: white;
+  img {
+    width: 23%;
+  }
+  h5 {
+    font-size: 35px;
+  }
+  .btn_wrap {
+    display: flex;
+    justify-content: center;
+    padding: 0 10% 3% 10%;
+    button {
+      padding: 14px 0;
+      width: 100%;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+    button + button {
+      margin-left: 2%;
+    }
+    button.active {
+      background-color: #81dbd2;
+      color: var(--text);
+    }
+  }
+
+  .price {
+    background-color: #38ad9d;
+    p:first-child {
+      font-size: 3rem;
+      text-decoration: line-through 0.5px;
+    }
+    p:last-child {
+      font-size: 4.5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.table_content {
+  font-size: 1.8rem;
+  padding-bottom: 30px;
+  p {
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  span {
+    padding: 5px 0;
+    display: block;
+  }
+  button {
+    padding: 12px 15px;
+    border-radius: 999px;
+    background-color: #27c9ba;
+    color: white;
+    border: none;
+    margin-top: 10px;
+  }
+}
+
+.price_table:nth-child(2) {
+  .table_head {
+    background-color: #4d69fd;
+  }
+  .price {
+    background-color: #295cff;
+  }
+  .btn_wrap {
+    button.active {
+      background-color: #a3b4ff;
+    }
+  }
+}
+
+.price_table:nth-child(3) {
+  .table_head {
+    background-color: #9358ed;
+  }
+  .price {
+    background-color: #7021ec;
+  }
+  .btn_wrap {
+    button.active {
+      background-color: #c9adf7;
+    }
+  }
+}
