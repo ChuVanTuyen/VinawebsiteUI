@@ -2,6 +2,20 @@
   margin-top: 10%;
   text-align: center;
 }
+.pricelist a {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 999px;
+  background-color: #27c9ba;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.pricelist a:hover {
+  cursor: pointer;
+  background-color: #3da195;
+}
 
 .pricelist_title {
   font-size: 3.8rem;
@@ -13,6 +27,7 @@
 
 .price_table_list {
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .price_table_wrap {
@@ -83,14 +98,6 @@
   padding: 5px 0;
   display: block;
 }
-.table_content button {
-  padding: 12px 15px;
-  border-radius: 999px;
-  background-color: #27c9ba;
-  color: white;
-  border: none;
-  margin-top: 10px;
-}
 
 .price_table:nth-child(2) .table_head {
   background-color: #4d69fd;
@@ -102,12 +109,165 @@
   background-color: #a3b4ff;
 }
 
+@-webkit-keyframes starVibrate {
+  0% {
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  20% {
+    transform: translateX(-50%) scale(1, 1) rotate(-3deg);
+  }
+  30% {
+    transform: translateX(-50%) scale(1, 1) rotate(3deg);
+  }
+  40% {
+    transform: translateX(-50%) scale(1, 1) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(-50%) scale(1, 1) rotate(3deg);
+  }
+  60% {
+    transform: translateX(-50%) scale(1, 1) rotate(-3deg);
+  }
+  70% {
+    transform: translateX(-50%) scale(1, 1) rotate(3deg);
+  }
+  80% {
+    transform: translateX(-50%) scale(1, 1) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+}
+
+@keyframes starVibrate {
+  0% {
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+  20% {
+    transform: translateX(-50%) scale(1, 1) rotate(-3deg);
+  }
+  30% {
+    transform: translateX(-50%) scale(1, 1) rotate(3deg);
+  }
+  40% {
+    transform: translateX(-50%) scale(1, 1) rotate(-3deg);
+  }
+  50% {
+    transform: translateX(-50%) scale(1, 1) rotate(3deg);
+  }
+  60% {
+    transform: translateX(-50%) scale(1, 1) rotate(-3deg);
+  }
+  70% {
+    transform: translateX(-50%) scale(1, 1) rotate(3deg);
+  }
+  80% {
+    transform: translateX(-50%) scale(1, 1) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(-50%) scale(0.8, 0.8);
+  }
+}
+.price_table:nth-child(3) {
+  margin-top: -40px;
+}
 .price_table:nth-child(3) .table_head {
+  padding-top: 70px;
   background-color: #9358ed;
+  position: relative;
+}
+.price_table:nth-child(3) .table_head::before {
+  content: "";
+  top: -11%;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: translateX(-50%);
+  background-image: url(../../images/pricelist_img/star.png);
+  background-repeat: no-repeat;
+  background-size: 90px;
+  -webkit-animation: starVibrate 1s infinite;
+          animation: starVibrate 1s infinite;
 }
 .price_table:nth-child(3) .price {
   background-color: #7021ec;
 }
 .price_table:nth-child(3) .btn_wrap button.active {
   background-color: #c9adf7;
+}
+
+.service_pack {
+  color: #f1f1f1;
+  background-image: url(../../images/pricelist_img/hinh.png);
+  height: 380px;
+  position: relative;
+}
+
+.service_pack_wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service_pack_wrap h2 {
+  font-size: 3.5rem;
+}
+.service_pack_wrap p {
+  font-size: 2.5rem;
+}
+.service_pack_wrap a {
+  font-size: 2rem;
+}
+
+.addon {
+  margin-top: 30px;
+}
+.addon .title {
+  margin-bottom: 15px;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.addon_table {
+  width: 100%;
+  margin: 0;
+  color: #333;
+  margin-bottom: 30px;
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-spacing: 0;
+}
+.addon_table th {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 8px;
+  color: black;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+.addon_table thead th {
+  background-color: #27c9ba;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+.addon_table td {
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  padding: 8px;
+  font-size: 1.4rem;
+}
+.addon_table td:hover {
+  color: #27c9ba;
+  cursor: pointer;
+}
+.addon_table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }/*# sourceMappingURL=pricelist.css.map */
