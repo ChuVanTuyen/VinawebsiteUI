@@ -270,4 +270,89 @@
 }
 .addon_table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+.addon {
+  padding-bottom: 35px;
+}
+
+.price_question {
+  text-align: left;
+}
+
+.price_question_wrap {
+  display: flex;
+}
+
+.price_question_list {
+  list-style: none;
+  width: 50%;
+}
+.price_question_list div {
+  position: relative;
+}
+.price_question_list div i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+.price_question_list .question {
+  font-size: 1.9rem;
+  display: block;
+  width: 95%;
+}
+.price_question_list .answer {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.price_question_list .answer span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.price_question_item {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price_question_item.active .question {
+  font-weight: 600;
+}
+.price_question_item.active .price_show_asw {
+  transform: rotate(-180deg);
+}
+
+.price_question_list + .price_question_list {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .price_question_list div i {
+    top: 0;
+    right: -5%;
+    padding: 5px 10px;
+    font-size: 20px;
+    transition: all 0.2s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price_question_wrap {
+    display: block;
+  }
+  .price_question_list {
+    width: 100%;
+  }
+  .price_question_list .question {
+    font-size: 1.9rem;
+    display: block;
+    width: 95%;
+  }
+  .price_question_list + .price_question_list {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=pricelist.css.map */

@@ -1,0 +1,122 @@
+.introduce {
+  margin-top: 10%;
+}
+
+.introduce_title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.introduce_title span {
+  color: var(--primary2);
+}
+
+.introduce_item1 {
+  background-color: var(--primary2);
+  position: relative;
+  padding: 40px 0 300px 0;
+  margin-bottom: 220px;
+}
+.introduce_item1 .introduce_item_wrap {
+  color: white;
+}
+.introduce_item1 img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68%;
+}
+
+.introduce_item_wrap h4 {
+  font-size: 3rem;
+  font-style: italic;
+}
+.introduce_item_wrap p {
+  font-size: 2rem;
+}
+
+.introduce_item2, .introduce_item3 {
+  min-height: 450px;
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+}
+.introduce_item2 .introduce_item_wrap, .introduce_item3 .introduce_item_wrap {
+  width: 52%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.introduce_item2 {
+  background-image: url(../../images/introduce_img/chien-luoc-phat-trien2.jpg);
+}
+
+.introduce_item3 {
+  background-image: url(../../images/introduce_img/hoatdong.jpg);
+}
+.introduce_item3 .introduce_item_wrap {
+  right: 5%;
+  text-align: right;
+}
+
+.introduce_item4 {
+  padding: 60px 0;
+  background-image: url(../../images/introduce_img/bg-bottom.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+.introduce_item4 .container {
+  margin: auto;
+  padding: 0;
+}
+.introduce_item4 img {
+  width: 100%;
+}
+.introduce_item4 p {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  padding: 2% 5%;
+  z-index: 1;
+}
+.introduce_item4 .introduce_item4_text {
+  position: relative;
+}
+.introduce_item4 .introduce_item4_text::after {
+  content: "";
+  background-image: url(../../images/introduce_img/nhay.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  height: 95px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.introduce_item4 .container::after {
+  content: "";
+  background-image: url(../../images/introduce_img/bg-left.png);
+  top: 7%;
+  right: 0;
+  width: 200px;
+  height: 305px;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+}
+.introduce_item4 .container::before {
+  content: "";
+  background-image: url(../../images/introduce_img/bg-right.png);
+  top: 30%;
+  left: 0;
+  width: 200px;
+  height: 305px;
+  position: absolute;
+  background-size: cover;
+  z-index: -1;
+}/*# sourceMappingURL=introduce.css.map */
