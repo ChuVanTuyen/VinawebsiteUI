@@ -1,7 +1,7 @@
-$(".stars").mousemove(function(e) {
-    var gLeft = $(".stars .stars-ghost").offset().left,
-       pX = e.pageX;
- 
-    $(".stars .stars-ghost").width(pX - gLeft);
- 
- });
+
+const navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".links");
+
+navToggle.addEventListener("click", function () {
+  links.classList.toggle("show-links");
+});

@@ -198,9 +198,9 @@
   }
 }
 
-.addon{
+.addon {
   margin-top: 30px;
-  .title{
+  .title {
     margin-bottom: 15px;
     font-size: 3.5rem;
     font-weight: 400;
@@ -217,7 +217,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-spacing: 0;
-  th{
+  th {
     font-weight: 400;
     font-size: 1.5rem;
     padding: 8px;
@@ -225,8 +225,8 @@
     border-bottom: 1px solid #ececec;
     border-right: 1px solid #ececec;
   }
-  thead{
-    th{
+  thead {
+    th {
       background-color: #27c9ba;
       color: #fff;
       padding: 10px;
@@ -237,19 +237,111 @@
       border-right: 1px solid #ececec;
     }
   }
-  td{
+  td {
     border-bottom: 1px solid #ececec;
     border-right: 1px solid #ececec;
     padding: 8px;
     font-size: 1.4rem;
   }
-  td:hover{
+  td:hover {
     color: #27c9ba;
     cursor: pointer;
   }
-  tbody{
-    tr:nth-child(even){
+  tbody {
+    tr:nth-child(even) {
       background-color: #f9f9f9;
     }
+  }
+}
+
+.addon {
+  padding-bottom: 35px;
+}
+
+.price_question {
+  text-align: left;
+}
+
+.price_question_wrap {
+  display: flex;
+}
+
+.price_question_list {
+  list-style: none;
+  width: 50%;
+  div {
+    position: relative;
+    i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px 10px;
+      font-size: 20px;
+      transition: all 0.2s;
+    }
+  }
+  .question {
+    font-size: 1.9rem;
+    display: block;
+    width: 95%;
+  }
+  .answer {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+    span {
+      font-weight: 600;
+      font-size: 1.6rem;
+      font-style: italic;
+    }
+  }
+}
+
+.price_question_item {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price_question_item.active {
+  .question {
+    font-weight: 600;
+  }
+  .price_show_asw {
+    transform: rotate(-180deg);
+  }
+}
+
+.price_question_list + .price_question_list {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .price_question_list {
+    div {
+      i {
+        top: 0;
+        right: -5%;
+        padding: 5px 10px;
+        font-size: 20px;
+        transition: all 0.2s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price_question_wrap {
+    display: block;
+  }
+  .price_question_list {
+    width: 100%;
+    .question {
+      font-size: 1.9rem;
+      display: block;
+      width: 95%;
+    }
+  }
+  .price_question_list + .price_question_list {
+    margin-left: 0;
   }
 }
